@@ -1,5 +1,10 @@
 /* Основные стили проекта. */
 
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
 .page {
   position: relative;
   padding-inline: min(2.5vw, 20px);
@@ -172,7 +177,7 @@
   font-weight: 700;
   line-height: 1.3;
   background-color: var(--title-bg-color);
-  inline-size: 50%; 
+  inline-size: 50%;
 }
 
 /* основной контент */
@@ -376,16 +381,15 @@ h4.title {
   .header__title {
     right: 0;
     margin-block-start: 7px;
-    
   }
 
-  .text-decor {  
+  .text-decor {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
   
   .header__text {
     margin-block-start: 30px;
-    inline-size: 100%;  
+    inline-size: 100%;
   }
 
   /* основной контент */
@@ -397,7 +401,7 @@ h4.title {
   .section:nth-child(n) {
     grid-template-columns: repeat(1, auto);
     grid-template-rows: auto;
-    row-gap: 20px;    
+    row-gap: 20px;
   }
   
   .section:nth-child(4) {
