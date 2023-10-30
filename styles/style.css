@@ -1,10 +1,5 @@
 /* Основные стили проекта. */
 
-body {
-  margin: 0 auto;
-  padding: 0;
-}
-
 .page {
   position: relative;
   padding-inline: min(2.5vw, 20px);
