@@ -371,8 +371,9 @@ h4.title {
     padding-block-start: 65px;
   }
 
-  .header__theme-menu-list {
-    padding-block-end: 12%;
+  .header__theme-menu-button {
+    margin-inline: 2%;
+    margin-block: 3%;
   }
 
   /* заголовок */
