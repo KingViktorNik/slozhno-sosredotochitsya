@@ -13,4 +13,9 @@
   --header-shadow-color: #ff0070;
   --cover-image: url("../images/cover-image-dark.png");
   --main-font: 'IBM Plex mono';
+  --decor-size: 25px;
+  --decor-inset: min(2.5vw, 20px);
+  --decor-border: 1px solid var(--accent-color, #ff0070);
+  --decor-left-inset-block: calc(100vh - var(--decor-size) - var(--decor-inset));
+  --decor-right-inset-block: var(--decor-inset);
 }
