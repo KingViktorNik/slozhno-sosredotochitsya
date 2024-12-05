@@ -1,5 +1,29 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background: var(--bg-color);
+}
+
+.header__theme-menu-button {
+  /* display: block; */
+  padding: 3px 13px;
+  color: var(--theme-menu-button-color, );
+  background: transparent;
+  border: 1px solid transparent;
+
+  font-family: var(--title-font), sans-serif;
+  text-transform: lowercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
+.header__theme-menu-button_active {
+  border-color: var(--border-color-active, rgb(255 0 112 / 0.4));
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
 }
