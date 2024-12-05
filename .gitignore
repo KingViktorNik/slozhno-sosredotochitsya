@@ -1,4 +1,5 @@
-node_modules/
-test-perfect-pixel/
+node_modules
+test-perfect-pixel
+stylelint.config.js
 package*
 .prettierrc
