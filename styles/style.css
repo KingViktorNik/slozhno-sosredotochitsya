@@ -1,29 +1,91 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background: var(--bg-color);
-}
-
-.header__theme-menu-button {
-  /* display: block; */
-  padding: 3px 13px;
-  color: var(--theme-menu-button-color, );
-  background: transparent;
-  border: 1px solid transparent;
-
-  font-family: var(--title-font), sans-serif;
-  text-transform: lowercase;
+  inline-size: 100%;
+  background: var(--bg-image) no-repeat center center;
+  background-attachment: fixed;
+  font-family: var(--title-font, sans-serif);
   font-size: 18px;
-  line-height: 18px;
-  letter-spacing: 1px;
+  line-height: 24px;
 }
 
-.header__theme-menu-button_active {
-  border-color: var(--border-color-active, rgb(255 0 112 / 0.4));
+.header {
+  inline-size: 100%;
+  min-block-size: 100dvh;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before, .decorated-zone::after {
+  position: absolute;
+  content: '';
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  top: 10px;
+  right: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--decor-color, ff0070);
+  border-block-start: 1px solid var(--decor-color, ff0070);
+}
+
+.decorated-zone::after {
+  bottom: 10px;
+  left: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--decor-color, ff0070);
+  border-block-end: 1px solid var(--decor-color, ff0070);
+}
+
+.title-decor { 
+  display: none;
+}
+
+.page:not(.theme_light) .title-decor {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 38px;
+  color: var(--decor-color, #ff0070);
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
+.title-decor::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: -19px;
+  background: var(--decor-color, #ff0070);
+  border-radius: 50%;
+  inline-size: 9px;
+  block-size: 9px;
+  box-shadow: 0 0 4px 2px currentColor;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   gap: 10px
+}
+
+.header__theme-menu-button {
+  padding: 3px 13px;
+  background: transparent;
+  color: var(--theme-menu-button-color, );
+  border: 1px solid transparent;
+  font-family: var(--title-font, sans-serif);
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  border-color: var(--border-color-active, rgb(255 0 112 / 0.4));
 }

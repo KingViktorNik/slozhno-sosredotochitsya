@@ -12,6 +12,8 @@
   --text-color: #db00ff;
   --bg-color: #000028;
   --accent-color: #ff0070;
+  --decor-color: #ff0070;
   --border-color-active: rgb(255 0 112 / 0.4);
   --theme-menu-button-color: #ff0070;
+  --bg-image: url(../images/cover-image-dark.png);
 }
