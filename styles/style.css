@@ -1,5 +1,24 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+.title {
+  color: var(--title-color-primary, #db00ff);
+  font-size: 116px;
+  text-shadow: 4px 4px 0 var(--shadow-color, #ff0070);
+  line-height: 95.7px;
+}
+
+.title-accent {
+  background-color: var(--accent-color,#ff0070);
+  color: var(--title-color-tertiary, #000028);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23.5px;
+}
+
+.title-decor { 
+  display: none;
+}
+
 .page {
   inline-size: 100%;
   background: var(--bg-image) no-repeat center center;
@@ -10,8 +29,15 @@
 }
 
 .header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   inline-size: 100%;
   min-block-size: 100dvh;
+  padding-block: 20px;
+  padding-inline: 10px;
 }
 
 .decorated-zone {
@@ -43,10 +69,6 @@
   border-block-end: 1px solid var(--decor-color, ff0070);
 }
 
-.title-decor { 
-  display: none;
-}
-
 .page:not(.theme_light) .title-decor {
   display: block;
   position: absolute;
@@ -69,6 +91,10 @@
   box-shadow: 0 0 4px 2px currentColor;
 }
 
+.header__theme-menu {
+justify-self: end;
+}
+
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
@@ -88,4 +114,51 @@
 
 .header__theme-menu-button_active {
   border-color: var(--border-color-active, rgb(255 0 112 / 0.4));
+}
+
+.section {
+  margin-block-start: 40px;
+  padding-inline: 10px;
+}
+
+.section:not(:last-of-type) {
+  margin-block-end: 50px;
+}
+
+.section__title {
+  color: var(--title-color-secondary, #ff0070);
+  
+}
+
+.content__title {
+  margin-block-start: 20px;
+}
+
+.content__text {
+  margin-block-start: 10px;
+  color: var(--text-color, #f1b2ce);
+}
+
+.content__link {
+  display: inline-block;
+  text-shadow: 1.5px 1.5px 0 var(--accent-color);
+  border-block-end: 1px solid transparent;
+  text-decoration: none;
+  line-height: 17px;
+}
+
+.content__link:hover {
+  border-color: currentColor;
+}
+
+.content__link:focus {
+  outline: none;
+}
+
+.content__link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+.group-content__title {
+  font-weight: normal;
 }
