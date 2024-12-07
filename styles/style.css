@@ -162,3 +162,25 @@ justify-self: end;
 .group-content__title {
   font-weight: normal;
 }
+
+.content__group-picture {
+}
+
+.content__picture {
+  display: block;
+  margin-block-start: 10px;
+  inline-size: 100%;
+}
+
+.footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 40px;
+  inline-size: 100%;
+  min-block-size: 100dvh;
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0 var(--shadow-color, #ff0070);  
+}
