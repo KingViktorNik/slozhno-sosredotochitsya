@@ -1,1 +1,1 @@
-https://github.com/KingViktorNik/slozhno-sosredotochitsya/tree/project-work-3
+https://github.com/KingViktorNik/slozhno-sosredotochitsya.git
