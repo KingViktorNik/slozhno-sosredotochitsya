@@ -1,4 +1,5 @@
 .page.theme_dark {
+  --bg-image: url(../images/cover-image-dark.png);
   --title-color-primary: #db00ff;
   --title-color-secondary: #ff0070;
   --title-color-tertiary: #000028;
@@ -9,5 +10,4 @@
   --decor-color: #ff0070;
   --border-color-active: rgb(255 0 112 / 0.4);
   --theme-menu-button-color: #ff0070;
-  --bg-image: url(../images/cover-image-dark.png);
 }

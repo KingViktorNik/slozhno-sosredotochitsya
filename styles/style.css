@@ -14,10 +14,6 @@
 }
 
 .title-decor {
-  display: none;
-}
-
-.page:not(.theme_light) .title-decor {
   display: block;
   position: absolute;
   top: 10px;
