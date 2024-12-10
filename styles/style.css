@@ -69,6 +69,7 @@
 
 .page {
   inline-size: 100%;
+  background-color: var(--bg-color, #000028);
   background: var(--bg-image) no-repeat center center / cover;
   background-attachment: fixed;
   font-family: var(--title-font, sans-serif);
