@@ -321,7 +321,6 @@
 @media (width >= 1024px) {
 
   .title {
-    --shadow-color: #ff0070;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 129.5px;
   }

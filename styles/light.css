@@ -16,6 +16,13 @@
   display: none;
 }
 
+@media (width >= 1024px) {
+
+  .title {
+    --shadow-color: #ff0070;
+  }
+}
+
 @media (prefers-color-scheme: light) {
 
   :root {
@@ -34,5 +41,12 @@
 
   .page.theme_auto .title-decor {
     display: none;
+  }
+
+  @media (width >= 1024px) {
+
+    .title {
+      --shadow-color: #ff0070;
+    }
   }
 }
