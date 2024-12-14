@@ -357,12 +357,14 @@
   .section__content-mod {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     gap: 20px;
   }
 
   .section__content-mod .content {
-    max-inline-size: 314px;
+    max-inline-size: calc((100% / 3));
+    flex-grow: 1;
+    flex-basis: calc((100% / 3) - 20px);
   }
 
   .section_wrap-content .section__title {
